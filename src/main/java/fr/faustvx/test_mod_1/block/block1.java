@@ -25,7 +25,6 @@ public class block1
         return new Block(Block.Properties.of(Material.METAL)
             .harvestTool(ToolType.PICKAXE)
             .harvestLevel(2)
-            .noDrops()
             );
     }
 }
