@@ -1,9 +1,9 @@
-package fr.faustvx.test_mod_1.block;
+package fr.faustvx.dices.block;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import fr.faustvx.test_mod_1.TestMod1;
+import fr.faustvx.dices.Dices;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.material.Material;
@@ -30,7 +30,7 @@ public final class Dice extends Block
 
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, TestMod1.MOD_ID);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Dices.MOD_ID);
 
     public static final RegistryObject<Block> DICE_BLOCK = BLOCKS.register("dice", Dice::new);
 

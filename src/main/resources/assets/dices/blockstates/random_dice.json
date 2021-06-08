@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "dices:block/random_dice"
+    }
+  }
+}

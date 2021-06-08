@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "value=1": {
+      "model": "dices:block/dice"
+    },
+    "value=2": {
+      "model": "dices:block/dice"
+    },
+    "value=3": {
+      "model": "dices:block/dice"
+    },
+    "value=4": {
+      "model": "dices:block/dice"
+    },
+    "value=5": {
+      "model": "dices:block/dice"
+    },
+    "value=6": {
+      "model": "dices:block/dice"
+    }
+  }
+}
