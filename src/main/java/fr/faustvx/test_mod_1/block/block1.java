@@ -22,9 +22,9 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
-public class block1 extends Block
+public final class block1 extends Block
 {
-    public block1()
+    private block1()
     {
         super(Block.Properties.of(Material.METAL)
         .harvestTool(ToolType.PICKAXE)

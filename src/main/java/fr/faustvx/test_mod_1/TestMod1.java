@@ -9,7 +9,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(TestMod1.MOD_ID)
-public class TestMod1
+public final class TestMod1
 {
     public static final String MOD_ID = "test_mod_1";
 

@@ -12,7 +12,7 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
-public class item_block1
+public final class item_block1
 {
     private static final Logger LOGGER = LogManager.getLogger();
 
