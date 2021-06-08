@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import fr.faustvx.test_mod_1.TestMod1;
+import fr.faustvx.test_mod_1.Utilities;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.material.Material;
@@ -50,7 +51,8 @@ public final class block1 extends Block
     public static final BooleanProperty LIT_PROPERTY = BlockStateProperties.LIT;
 
     @Override
-    protected void createBlockStateDefinition(StateContainer.Builder<Block, BlockState> builder) {
+    protected void createBlockStateDefinition(StateContainer.Builder<Block, BlockState> builder)
+    {
       builder.add(LIT_PROPERTY);
     }
 
@@ -65,8 +67,7 @@ public final class block1 extends Block
     {
         if (!worldIn.isClientSide)
         {
-            BlockState new_state = state.setValue(LIT_PROPERTY, Boolean.valueOf(!state.getValue(LIT_PROPERTY)));
-            worldIn.setBlock(pos, new_state, 0);
+            Utilities.changeState(state, worldIn, pos, LIT_PROPERTY, lit -> !lit);
             return ActionResultType.CONSUME;
         }
         return ActionResultType.SUCCESS;
