@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube",
   "textures": {
-    "particle": "dices:block/dice6",
+    "particle": "dices:block/dice1",
     "up": "dices:block/dice1",
     "down": "dices:block/dice6",
     "north": "dices:block/dice2",

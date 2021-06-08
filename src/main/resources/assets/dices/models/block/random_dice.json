@@ -1,6 +1,12 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "dices:block/random_dice"
+    "particle": "dices:block/dice_anim1",
+    "up": "dices:block/dice_anim6",
+    "down": "dices:block/dice_anim1",
+    "north": "dices:block/dice_anim2",
+    "south": "dices:block/dice_anim5",
+    "west": "dices:block/dice_anim3",
+    "east": "dices:block/dice_anim4"
   }
 }
