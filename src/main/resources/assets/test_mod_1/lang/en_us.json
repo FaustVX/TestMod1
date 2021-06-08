@@ -1,3 +1,4 @@
 {
-    "block.test_mod_1.block1": "Test Block 1"
+    "block.test_mod_1.dice": "Dice",
+    "block.test_mod_1.random_dice": "Random Dice"
 }
