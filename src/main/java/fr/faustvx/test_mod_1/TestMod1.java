@@ -1,7 +1,6 @@
 package fr.faustvx.test_mod_1;
 
 import fr.faustvx.test_mod_1.block.block1;
-import fr.faustvx.test_mod_1.item.item_block1;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -20,6 +19,6 @@ public final class TestMod1
 
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         block1.BLOCKS.register(modEventBus);
-        item_block1.ITEMS.register(modEventBus);
+        block1.ITEMS.register(modEventBus);
     }
 }
