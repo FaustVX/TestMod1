@@ -46,6 +46,27 @@
                 "reveal": "always"
             },
             "problemMatcher": []
+        },
+        {
+            "label": "git push",
+            "command": "git push ${input:git_push_force}",
+            "type": "shell",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "git push tags",
+            "command": "git push --tags ${input:git_push_force}",
+            "type": "shell",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": [],
+            "dependsOn":[
+                "git push"
+            ]
         }
     ],
     "inputs": [
@@ -73,6 +94,21 @@
             "type": "promptString",
             "default": "--root",
             "description": "git ref to rebase into"
+        },
+        {
+            "id": "git_push_force",
+            "type": "pickString",
+            "options": [
+                {
+                    "label": "normal",
+                    "value": ""
+                },
+                {
+                    "label": "force",
+                    "value": "--force"
+                }
+            ],
+            "description": "push with force"
         }
     ]
 }
