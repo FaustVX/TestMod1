@@ -22,7 +22,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public final class RandomDice extends Block
 {
-    public RandomDice()
+    private RandomDice()
     {
         super(Block.Properties.of(Material.DECORATION));
     }
