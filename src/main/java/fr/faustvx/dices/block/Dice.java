@@ -60,4 +60,10 @@ public final class Dice extends Block
     {
         return state.getValue(VALUE_PROPERTY) * 2;
     }
+
+    @Override
+    public Block getBlock()
+    {
+        return RandomDice.DICE_BLOCK.get();
+    }
 }
